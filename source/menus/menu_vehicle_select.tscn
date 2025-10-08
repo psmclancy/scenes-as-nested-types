@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://trfiidaoq0fw"]
+
+[ext_resource type="Script" uid="uid://b778esg8c6478" path="res://source/menus/menu_vehicle_select.gd" id="1_dbikx"]
+[ext_resource type="PackedScene" uid="uid://dv8pte2l2t5lx" path="res://source/libraries/library_vehicles.tscn" id="2_vt0xd"]
+
+[node name="MenuVehicleSelect" type="Node2D" node_paths=PackedStringArray("library_vehicles")]
+script = ExtResource("1_dbikx")
+library_vehicles = NodePath("LibraryVehicles")
+
+[node name="LibraryVehicles" parent="." instance=ExtResource("2_vt0xd")]

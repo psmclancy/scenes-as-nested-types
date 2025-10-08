@@ -1,0 +1,47 @@
+[gd_scene load_steps=8 format=3 uid="uid://dv8pte2l2t5lx"]
+
+[ext_resource type="Script" uid="uid://8d067u4ig7ld" path="res://source/libraries/library_vehicles.gd" id="1_ahv5m"]
+[ext_resource type="Script" uid="uid://fx2nw08li3gf" path="res://source/libraries/primes/prime_vehicle.gd" id="1_c06f8"]
+[ext_resource type="Texture2D" uid="uid://dtd8yx4wr2wna" path="res://content/images/vehicles/vehicle_01.png" id="2_cbi3g"]
+[ext_resource type="Texture2D" uid="uid://cgaqphm4d7t7m" path="res://content/images/vehicles/vehicle_02.png" id="3_6l0dp"]
+[ext_resource type="Texture2D" uid="uid://bdrqmiy32x2mn" path="res://content/images/vehicles/vehicle_03.png" id="4_ahv5m"]
+[ext_resource type="Texture2D" uid="uid://c578sa8xy13sw" path="res://content/images/vehicles/vehicle_04.png" id="5_txsfj"]
+[ext_resource type="Texture2D" uid="uid://btwfi86bt8v77" path="res://content/images/vehicles/vehicle_05.png" id="6_6l0dp"]
+
+[node name="LibraryVehicles" type="Node"]
+script = ExtResource("1_ahv5m")
+
+[node name="Vehicle_01" type="Node" parent="."]
+script = ExtResource("1_c06f8")
+display_name = "3003"
+description = "It's a vehicle"
+power = 400
+icon = ExtResource("2_cbi3g")
+
+[node name="Vehicle_02" type="Node" parent="."]
+script = ExtResource("1_c06f8")
+display_name = "Rallye"
+description = "Surprise, it's another vehicle"
+power = 300
+icon = ExtResource("3_6l0dp")
+
+[node name="Vehicle_03" type="Node" parent="."]
+script = ExtResource("1_c06f8")
+display_name = "Arrow"
+description = "Woah, a vehicle"
+power = 700
+icon = ExtResource("4_ahv5m")
+
+[node name="Vehicle_04" type="Node" parent="."]
+script = ExtResource("1_c06f8")
+display_name = "Big Bob"
+description = "Yep, a vehicle"
+power = 100
+icon = ExtResource("5_txsfj")
+
+[node name="Vehicle_05" type="Node" parent="."]
+script = ExtResource("1_c06f8")
+display_name = "038"
+description = "This one's a vehicle"
+power = 900
+icon = ExtResource("6_6l0dp")
